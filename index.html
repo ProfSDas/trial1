@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">ORP</a>
+                <p id="title">Odisha Recruitment Portal</p>
+            </div>
+            <nav>
+                <ul class="menu" id="menu">
+                    <li class="search"><input type="search" name="search" id=""><button type="submit">search</button></li>
+                    <li><a href="#home">Home</a></li>
+                    <li id="myProfile"><a href="#">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <section class="section1" id="home">
+        <ul class="main-button">
+            <li><a href="">Login / Signup <br> as</a>
+          <ul class="but-ton" id="subButtons">
+            <li><button id="recruiterBtn" class="buttons">Recruiter</button></li>
+            <li><button id="jobseekerBtn" class="buttons">Jobseeker</button></li>
+         </ul>
+            </li>
+        </ul>
+    <div id="rLogin" class="recruiter" >
+            <h1>Log in</h1>
+                <form action="myProfile()" method="post">
+                <input type="email" placeholder="Username/Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" value="Login" id="logIn">Login</button>
+                <input type="reset" placeholder="Reset">
+                <p>Don't have an account<a href="#" id="rSignupBtn">Register here</a></p>
+              </form>
+        </div>
+            <div id="rSignup" class="recruiter" >
+                <h1>Sign up</h1>
+                <form action="myProfile()" method="post">
+                    <select name="Salutation" required role="progressbar">
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Dr." not selected>Dr.</option>
+                    </select>
+                    <input type="text" placeholder="Firstname" required>
+                    <input type="text" placeholder="Lastname" required>
+                    <input type="text" placeholder="Organisation/Company Name" required>
+                    <input type="email" placeholder="Username/Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" id="rPassword" required>
+                    <button type="submit" value="Signup" id="signUp">Register</button>
+                    <input type="reset" placeholder="Reset">
+                    <p>Already have an account<a href="#" id="rLoginBtn">Login</a></p>
+
+                </form>
+</div>
+<div id="jLogin" class="jobseeker">
+    <h1>Log in</h1>
+        <form action="myProfile()" method="post">
+        <input type="email" placeholder="Username/Email">
+        <input type="password" placeholder="Password">
+        <button type="submit" value="Login" id="logIn">Login</button>
+        <input type="reset" placeholder="Reset">
+        <p>Don't have an account<a href="#" id="jSignupBtn">Register here</a></p>
+      </form>
+</div>
+    <div id="jSignup" class="jobseeker">
+        <h1>Sign up</h1>
+        <form action="myProfile()" method="post">
+            <select name="Salutation">
+                <option value="Mr.">Mr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Dr.">Dr.</option>
+            </select>
+            <input type="text" placeholder="Firstname">
+            <input type="text" placeholder="Lastname">
+            <input type="text" placeholder="Organisation/Company Name">
+            <input type="email" placeholder="Username/Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password" id="rPassword">
+            <button type="submit" value="Signup" id="signUp">Register</button>
+            <input type="reset" placeholder="Reset">
+            <p>Already have an account<a href="#" id="jLoginBtn">Login</a></p>
+
+        </form>
+</div>
+    </section>
+    <section class="section2" id="about">
+        <map name="location"><a href="www.googlemap.com"></a></map>
+    </section>
+    <section class="section3" id="contact" >
+        <form action="">
+        <h1>Contact us</h1>
+       <label for="">Email</label>
+       <input type="email">
+       <label for="">Fullname</label>
+       <input type="text">
+       <label for="">your query</label>
+       <input type="text">
+       <input type="submit" value="Get a response" onclick="sendEmail()">
+    </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
